@@ -8,7 +8,7 @@ public class Weather {
     @Id
     private String date;
 
-    private long weather;
+    private long temperature;
 
     public String getDate() {
         return date;
@@ -18,11 +18,11 @@ public class Weather {
         this.date = date;
     }
 
-    public long getWeather() {
-        return weather;
+    public long getTemperature() {
+        return temperature;
     }
 
-    public void setWeather(long weather) {
-        this.weather = weather;
+    public void setTemperature(long weather) {
+        this.temperature = weather;
     }
 }
