@@ -26,7 +26,7 @@ public class YandexWeatherFetcher {
             connection.setInstanceFollowRedirects(true);
             int status = connection.getResponseCode();
             if (status != 200) {
-                throw new WeatherFetchException("Response status code is not 200");
+                throw new WeatherFetchException("Error while requesting yandex.ru. Status code is " + String.valueOf(status));
             }
             BufferedReader reader = new BufferedReader(new InputStreamReader(connection.getInputStream()));
             String line = reader.readLine();
